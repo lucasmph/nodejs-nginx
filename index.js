@@ -12,6 +12,9 @@ const config = {
 const mysql = require('mysql');
 const connection = mysql.createConnection(config);
 
+const sql = `INSERT INTO people(name) values('Name Test)`
+connection.query(sql)
+
 app.use(bodyParser.json());
 app.use(express.static("./"));
 
