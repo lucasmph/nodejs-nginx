@@ -12,7 +12,7 @@ const config = {
 const mysql = require('mysql');
 const connection = mysql.createConnection(config);
 
-const sql = `INSERT INTO people(name) values('Name Test)`
+const sql = `INSERT INTO people(name) values('Test Name')`
 connection.query(sql)
 
 app.use(bodyParser.json());
